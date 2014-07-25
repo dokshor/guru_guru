@@ -13,4 +13,8 @@ class TestGuruGuru < Test::Unit::TestCase
 	def test_una_meaita
 		assert("Una meaita".to_guru_guru, "Ugna gneaica")
 	end
+
+	def test_acento
+		assert("camión ñaño".to_guru_guru, "cagnióñ Ggniaggnio")
+	end
 end

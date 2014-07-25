@@ -1,17 +1,47 @@
+#encoding: UTF-8
 require 'rubygems'
 require 'nokogiri'
 require 'net/http'
 
 class String
 
-	# Creditos a https://github.com/c-castillo
 	def to_guru_guru
-		begin
-			res = Net::HTTP.post_form(URI.parse('http://pangui.heroku.com/'),{'msg' => self})
-			Nokogiri::HTML(res.body).css('h1')[1].inner_text.gsub(/^\s+/,'').gsub(/\s+$/,'')
-		rescue
-			"hay uñ egrog cgagujieñgo"
-		end
+    str = Array.new
+
+    letters = {
+      "a" => "a",
+      "b" => "g",
+      "c" => "a",
+      "d" => "g",
+      "e" => "a",
+      "f" => "j",
+      "g" => "g",
+      "h" => "h",
+      "i" => "i",
+      "j" => "j",
+      "k" => "k",
+      "l" => "g",
+      "m" => "ñ",
+      "n" => "ñ",
+      "o" => "o",
+      "p" => "c",
+      "q" => "q",
+      "r" => "ggr",
+      "s" => "j",
+      "t" => "c",
+      "u" => "u",
+      "v" => "v",
+      "w" => "w",
+      "x" => "kj",
+      "y" => "y",
+      "z" => "j"
+    }
+
+    self.downcase.split("").each do |char|
+      str << (letters.include?(char)) ? letters[char] : char
+    end
+    
+    str.join("")
 	end
 
 end
