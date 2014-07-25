@@ -1,6 +1,6 @@
 # guru_guru
 
-Transforma lo que quieras al lenguaj de Guru Guru
+Transforma lo que quieras al lenguaje de Guru Guru
 
 ## Instalación
 
