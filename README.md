@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/guru_guru.svg)](http://badge.fury.io/rb/guru_guru)
+
 # guru_guru
 
 Transforma lo que quieras al lenguaje de Guru Guru
