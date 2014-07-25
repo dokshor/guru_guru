@@ -11,9 +11,9 @@ class String
     letters = {
       "a" => "a",
       "b" => "g",
-      "c" => "a",
+      "c" => "c",
       "d" => "g",
-      "e" => "a",
+      "e" => "e",
       "f" => "j",
       "g" => "g",
       "h" => "h",
@@ -22,15 +22,16 @@ class String
       "k" => "k",
       "l" => "g",
       "m" => "ñ",
-      "n" => "ñ",
+      "n" => "gn",
+      "ñ" => "ggni",
       "o" => "o",
       "p" => "c",
       "q" => "q",
-      "r" => "ggr",
+      "r" => "cggg",
       "s" => "j",
       "t" => "c",
       "u" => "u",
-      "v" => "v",
+      "v" => "g",
       "w" => "w",
       "x" => "kj",
       "y" => "y",
@@ -38,10 +39,10 @@ class String
     }
 
     self.downcase.split("").each do |char|
-      str << (letters.include?(char)) ? letters[char] : char
+      str << ((letters.include?(char)) ? letters[char] : char)
     end
     
-    str.join("")
+    str.join("").downcase
   end
 
 end

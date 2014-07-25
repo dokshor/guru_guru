@@ -7,14 +7,14 @@ class TestGuruGuru < Test::Unit::TestCase
 	end
 
 	def test_darse_un_lujo
-		assert("Darse un lujo".to_guru_guru, "gagje uñ gujo")
+		assert_equal("darse un lujo".to_guru_guru, "gacgggje ugn gujo")
 	end
 	
 	def test_una_meaita
-		assert("Una meaita".to_guru_guru, "Ugna gneaica")
+		assert_equal("una meaita".to_guru_guru, "ugna ñeaica")
 	end
 
 	def test_acento
-		assert("camión ñaño".to_guru_guru, "cagnióñ Ggniaggnio")
+		assert_equal("camión ñaño".to_guru_guru, "cañiógn ggniaggnio")
 	end
 end
