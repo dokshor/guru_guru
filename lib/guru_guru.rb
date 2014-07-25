@@ -5,7 +5,7 @@ require 'net/http'
 
 class String
 
-	def to_guru_guru
+  def to_guru_guru
     str = Array.new
 
     letters = {
@@ -42,6 +42,6 @@ class String
     end
     
     str.join("")
-	end
+  end
 
 end
