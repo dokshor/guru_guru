@@ -11,7 +11,7 @@ class TestGuruGuru < Test::Unit::TestCase
 	end
 	
 	def test_una_meaita
-		assert_equal("una meaita".to_guru_guru, "gna ñeaica")
+		assert_equal("una meaita".to_guru_guru, "ugna ñeaica")
 	end
 
 	def test_acento
